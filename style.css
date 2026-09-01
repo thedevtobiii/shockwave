@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0b0c10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #ffffff;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    z-index: 1;
+}
+
+#replay-btn {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(14, 16, 24, 0.75);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#replay-btn:hover {
+    background: rgba(24, 28, 42, 0.9);
+    border-color: rgba(96, 213, 255, 0.5);
+    color: #60d5ff;
+    transform: translateY(-2px);
+}
+
+#replay-btn:active {
+    transform: translateY(0) scale(0.95);
+}
